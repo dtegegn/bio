@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Dagmawi Delelegn Tegegn - Portfolio</title>
+    <meta name="description" content="Portfolio of Dagmawi Delelegn Tegegn, a highly motivated professional with expertise in Computer Science.">
+    <meta name="author" content="Dagmawi Delelegn Tegegn">
+
+    <!-- Mobile-friendly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+    <!-- Minimalist CSS -->
+    <link rel="stylesheet" href="assets/css/minimalist.css">
+
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="assets/images/favicon.ico">
+  </head>
+  <body>
+    <!-- User info -->
+    <header>
+      <div class="container">
+        <div class="row justify-content-lg-center">
+          <div class="col-lg-2 text-center">
+            <img src="https://picsum.photos/140" class="user-image rounded-circle" alt="Dagmawi Delelegn Tegegn">
+          </div>
+          <div class="col-lg-7">
+            <h2>Dagmawi Delelegn Tegegn</h2>
+            <p class="text-justify">
+              I am a highly motivated and well-qualified professional with a solid foundation in Computer Science. My educational journey has equipped me with a Ph.D., Master's, and Bachelor's degree, complemented by extensive work experience in advanced data analysis techniques, machine learning, and deep learning. My passion lies in harnessing technology to address real-world challenges, and I thrive in collaborative, multidisciplinary environments. My research and work background includes data management, data-driven knowledge building, and the development of AI models.
+            </p>
+            <ul class="list-inline text-lg-right social-icons">
+              <li class="list-inline-item"><a href="https://github.com/your-github" target="_blank"><i class="fab fa-github"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.linkedin.com/in/your-linkedin" target="_blank"><i class="fab fa-linkedin-in"></i></a></li>
+              <li class="list-inline-item"><a href="mailto:your-email@example.com" target="_blank"><i class="fas fa-at"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.facebook.com/your-facebook" target="_blank"><i class="fab fa-facebook"></i></a></li>
+              <li class="list-inline-item"><a href="https://www.instagram.com/your-instagram" target="_blank"><i class="fab fa-instagram"></i></a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </header>
+    <!-- Content -->
+    <section>
+      <!-- ./content-switch -->
+      <div class="d-flex justify-content-center">
+        <div class="list-group list-group-horizontal-md" id="content-tabs" role="tablist">
+          <a class="list-group-item small text-uppercase active" id="list-aboutme-list" data-toggle="list" href="#aboutme" role="tab">About Me</a>
+          <a class="list-group-item small text-uppercase" id="list-experience-list" data-toggle="list" href="#experience" role="tab">Experience</a>
+          <a class="list-group-item small text-uppercase" id="list-projects-list" data-toggle="list" href="#projects" role="tab">Projects</a>
+          <a class="list-group-item small text-uppercase" id="list-education-list" data-toggle="list" href="#education" role="tab">Education</a>
+          <a class="list-group-item small text-uppercase" id="list-publications-list" data-toggle="list" href="#publications" role="tab">Publications</a>
+          <a class="list-group-item small text-uppercase" id="list-skills-list" data-toggle="list" href="#skills" role="tab">Skills</a>
+        </div>
+      </div>
+      <!-- ./content-switch -->
+      <!-- ./content-body -->
+      <div class="container pt-5 tab-content">
+        <!-- ./aboutme-panel-->
+        <div class="tab-pane fade show active" id="aboutme" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-8">
+              <p>
+                I am a highly motivated and well-qualified professional with a solid foundation in Computer Science. My educational journey has equipped me with a Ph.D., Master's, and Bachelor's degree, complemented by extensive work experience in advanced data analysis techniques, machine learning, and deep learning. My passion lies in harnessing technology to address real-world challenges, and I thrive in collaborative, multidisciplinary environments. My research and work background includes data management, data-driven knowledge building, and the development of AI models.
+              </p>
+            </div>
+          </div>
+        </div>
+        <!-- ./experience-panel-->
+        <div class="tab-pane fade" id="experience" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg">
+              <!-- Timeline -->
+              <div class="timeline-container">
+                <div class="timeline-block timeline-block-right">
+                  <div class="marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Research and Development</h3>
+                    <span class="timeline-span">Seletech Engineering Srl - Italy</span>
+                    <p class="text-muted small mb-3">2019 - present</p>
+                    <p class="timeline-p text-justify">Mainly working on near infrared sensors and its use as a non-invasive method in areas such as: Wellness (for diabetes evaluation), Veterinary (searching for stress markers in cows), and Industrial (classification of different organic materials). Main responsibilities include planning and managing data projects, building analytic systems and predictive models and managing active collaborations between Seletech and Universities and other institutions.</p>
+                  </div>
+                </div>
+            
+                <div class="timeline-block timeline-block-left">
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Lecturer</h3>
+                    <span class="timeline-span">University of Milano-Bicocca</span>
+                    <p class="text-muted small mb-3">2021 - 2023</p>
+                    <p class="timeline-p text-justify">Lecturer for the course of Introduction to Informatics at the Department of Earth and Environmental Sciences. Supervisor of bachelor’s degree thesis.</p>
+                  </div>
+                  <div class="marker"></div>
+                </div>
+            
+                <div class="timeline-block timeline-block-right">
+                  <div class="marker"></div>
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Tutor</h3>
+                    <span class="timeline-span">University of Milano-Bicocca</span>
+                    <p class="text-muted small mb-3">2020 - 2021</p>
+                    <p class="timeline-p text-justify">Tutor for the course of Introduction to Informatics at the Department of Earth and Environmental Sciences.</p>
+                  </div>
+                </div>
+            
+                <div class="timeline-block timeline-block-left">
+                  <div class="timeline-content">
+                    <h3 class="timeline-h3">Freelance Website Developer</h3>
+                    <span class="timeline-span">Various</span>
+                    <p class="text-muted small mb-3">2013 - 2018</p>
+                    <p class="timeline-p text-justify">Worked as a freelance on various backend and frontend website development projects applying interactive and visual design principles on websites and web applications for a positive and cohesive user experience. Main tasks were working at a conceptual level with the client, understanding and representing user needs, monitoring user interaction with adequate tools and working with outside stakeholders. Projects required strong communication and problem-solving skills as well as flexibility, adaptability and effective stress management.</p>
+                    <p class="timeline-p text-justify"><strong>Example Projects:</strong><br>
+                      <a href="http://www.fondazionegenoa.com" target="_blank">Fondazione Genoa</a> (2017-2018): Official website of the Museum and Foundation of Genoa CFC.<br>
+                      <a href="http://www.safe-book.com" target="_blank">Safe Book</a> (2013 - 2016): Educational website for high school students sponsored by Reckitt Benckiser (D
+
+urex).<br>
+                      <a href="https://www.palermotoday.it/economia/vodafone-skill-generation-contest-glossario-web.html" target="_blank">Skill Generation</a> (Jan 2017 - June 2017): Web application for a tournament involving 380 Palermo high schools, sponsored by Vodafone.<br>
+                      <a href="http://www.chemsex.it" target="_blank">Chemsex</a> (2017): Website commissioned by ASA (Associazione Solidarietà AIDS) to reduce harms associated with new recreational drugs use, sponsored by VIIV Healthcare.
+                    </p>
+                  </div>
+                  <div class="marker"></div>
+                </div>
+              </div>
+              <!-- ./timeline -->
+            </div>
+          </div>
+        </div>
+        <!-- ./projects-panel-->
+        <div class="tab-pane fade" id="projects" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <!-- Example project card -->
+            <div class="col-lg-8 pb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Variational Autoencoder for Early Stress Detection in Smart Agriculture: A Pilot Study</h4>
+                  <p class="card-text">A study published in the 2022 IEEE Workshop on Metrology for Agriculture and Forestry. This work focuses on using variational autoencoders for early stress detection in agricultural contexts.</p>
+                  <ul class="list-inline social-icons">
+                    <li class="list-inline-item"><a href="https://doi.org/10.1109/MetroAgriFor55389.2022.9964641" target="_blank"><i class="fas fa-link"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+            <!-- Example project card -->
+            <div class="col-lg-8 pb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Rapid Analysis of Powders Based on Deep Learning, Near-Infrared and Derivative Spectroscopy</h4>
+                  <p class="card-text">Presented at the 1st Italian Workshop on Artificial Intelligence and Applications for Business and Industries (AIABI 2021), this work involves deep learning techniques for the analysis of powders.</p>
+                  <ul class="list-inline social-icons">
+                    <li class="list-inline-item"><a href="https://ceur-ws.org/Vol-1/paper1.pdf" target="_blank"><i class="fas fa-link"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+            <!-- Example project card -->
+            <div class="col-lg-8 pb-3">
+              <div class="card">
+                <div class="card-body">
+                  <h4 class="card-title">Convolutional Neural Networks for Quantitative Prediction of Different Organic Materials using Near-Infrared Spectrum</h4>
+                  <p class="card-text">A study published in the proceedings of the 14th International Joint Conference on Biomedical Engineering Systems and Technologies (BIOSTEC 2021), focusing on the use of CNNs for material analysis.</p>
+                  <ul class="list-inline social-icons">
+                    <li class="list-inline-item"><a href="https://doi.org/10.5220/0010244101690176" target="_blank"><i class="fas fa-link"></i></a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <!-- Force next columns to break to new line -->
+            <div class="w-100"></div>
+          </div>
+        </div>
+        <!-- ./education-panel-->
+        <div class="tab-pane fade" id="education" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-8">
+              <h4>PhD in Computer Science</h4>
+              <p class="text-muted small mb-3">University of Milano-Bicocca (2019 - 2023)</p>
+              <p>Research focused on MEMS-based near-infrared sensor applications particularly in healthcare and smart agriculture. Developed predictive models using statistics, data mining, and data analysis techniques. Thesis title: Process of analysing organic materials through near-infrared spectra.</p>
+
+              <h4>Master's degree in Computer Science</h4>
+              <p class="text-muted small mb-3">University of Milano-Bicocca (2017 - 2019)</p>
+              <p>Good knowledge in probabilistic models for decision-making, large-scale data management, and bioinformatics. Thesis title: Deep learning methods for classification of DNA sequencing data. Grade: 110/110 with honours.</p>
+
+              <h4>Bachelor's degree in Computer Science</h4>
+              <p class="text-muted small mb-3">University of Milano-Bicocca (2013 - 2018)</p>
+              <p>Strong foundation in algorithms, data structures, software engineering, databases, bioinformatics, human-machine interface, programming, and more. Thesis title: Requirements for Industry 4.0 and Security design for Rubberflex Sdn Bhd. Grade: 89/110.</p>
+
+              <h4>Secondary School Diploma</h4>
+              <p class="text-muted small mb-3">Istituto Italiano Omnicomprensivo, Ethiopia (2006 - 2011)</p>
+            </div>
+          </div>
+        </div>
+        <!-- ./publications-panel-->
+        <div class="tab-pane fade" id="publications" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-8">
+              <h4>Publications</h4>
+              <ul>
+                <li><strong>A. Zancanaro et al.</strong>, "Variational Autoencoder for Early Stress Detection in Smart Agriculture: A Pilot Study," 2022 IEEE Workshop on Metrology for Agriculture and Forestry (MetroAgriFor), Perugia, Italy, 2022, pp. 126-130. <a href="https://doi.org/10.1109/MetroAgriFor55389.2022.9964641" target="_blank">DOI: 10.1109/MetroAgriFor55389.2022.9964641</a></li>
+                <li><strong>Delelegn, T., Zoppis, I., Manzoni, S., Mognato, A., Reguzzoni, I., Lotti, E.</strong> (2021). Rapid Analysis of Powders Based on Deep Learning, Near-Infrared and Derivative Spectroscopy. In Proceedings of the 1st Italian Workshop on Artificial Intelligence and Applications for Business and Industries (AIABI 2021) co-located with 20th International Conference of the Italian Association for Artificial Intelligence (AI*IA 2021), pp. 1-12. <a href="https://ceur-ws.org/Vol-1/paper1.pdf" target="_blank">Link</a></li>
+                <li><strong>Tegegn, D., Zoppis, I., Manzoni, S., Sas, C., Lotti, E.</strong> (2021). Convolutional Neural Networks for Quantitative Prediction of Different Organic Materials using Near-Infrared Spectrum. In BIOSTEC 2021. Proceedings of the 14th International Joint Conference on Biomedical Engineering Systems and Technologies - Volume 4, pp. 169-176. <a href="https://doi.org/10.5220/0010244101690176" target="_blank">DOI: 10.5220/0010244101690176</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- ./skills-panel-->
+        <div class="tab-pane fade" id="skills" role="tabpanel">
+          <div class="row justify-content-lg-center">
+            <div class="col-lg-8">
+              <h4>Skills</h4>
+              <ul>
+                <li><strong>Languages:</strong> Amharic (Native), Italian (C1), English (C1)</li>
+                <li><strong>Technical Skills:</strong>
+                  <ul>
+                    <li>Advanced data analysis techniques</li>
+                    <li>Machine learning</li>
+                    <li>Deep learning</li>
+                    <li>Data management</li>
+                    <li>Bioinformatics</li>
+                    <li>Probabilistic models for decision-making</li>
+                    <li>Large-scale data management</li>
+                  </ul>
+                </li>
+                <li><strong>Soft Skills:</strong>
+                  <ul>
+                    <li>Strong communication and problem-solving skills</li>
+                    <li>Flexibility and adaptability</li>
+                    <li>Effective stress management</li>
+                  </ul>
+                </li>
+                <li><strong>Driving Licence:</strong> B</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <div class="container text-center">
+        <p class="small">
+          <a href="https://github.com/imgios/minimalist" target="_blank">minimalist</a> built with
+
+ 🖤 and <a href="https://getbootstrap.com/" target="_blank">bootstrap</a>
+        </p>
+      </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
