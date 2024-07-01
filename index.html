@@ -45,18 +45,6 @@
 
       gtag('config', 'G-9KETX95DNL');
     </script>
-    <script>
-      // Check if the 'visitCount' key exists in local storage
-      if (localStorage.getItem('visitCount')) {
-        // If it does, increment the value
-        localStorage.setItem('visitCount', parseInt(localStorage.getItem('visitCount')) + 1);
-      } else {
-        // If it doesn't, set the value to 1
-        localStorage.setItem('visitCount', 1);
-      }
-      // Update the HTML to show the visit count
-      document.getElementById('visit-counter').innerText = `Visits: ${localStorage.getItem('visitCount')}`;
-    </script>
     
   </head>
   <body>
@@ -104,8 +92,6 @@
         </div>  
       </div>
     </header>
-    <div id="visit-counter">Visits: 0</div>
-
     <!-- Content -->
     <section>
       <!-- ./content-switch -->
@@ -400,9 +386,9 @@
     </section>
     <footer class="mt-5">
       <div class="container text-center">
-        <p class="small">
-          © 2023 Dagmawi Delelegn Tegegn. All rights reserved.
-        </p>
+        <div class="small">
+          © 2023 Dagmawi Delelegn Tegegn. All rights reserved. <div id="visit-counter">0</div>
+        </div>
       </div>
     </footer>
 
@@ -410,5 +396,32 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script>
+      // Function to increment visit count
+      function incrementVisitCount() {
+          // Check if the 'visitCount' key exists in session storage
+          if (!sessionStorage.getItem('visitCount')) {
+              // If it doesn't, check localStorage and update sessionStorage
+              if (localStorage.getItem('visitCount')) {
+                  sessionStorage.setItem('visitCount', localStorage.getItem('visitCount'));
+              } else {
+                  sessionStorage.setItem('visitCount', 0);
+              }
+          }
+
+          // Increment the session visit count
+          sessionStorage.setItem('visitCount', parseInt(sessionStorage.getItem('visitCount')) + 1);
+
+          // Update the localStorage with the new session visit count
+          localStorage.setItem('visitCount', sessionStorage.getItem('visitCount'));
+
+          // Update the HTML to show the visit count
+          document.getElementById('visit-counter').innerText = `${localStorage.getItem('visitCount')}`;
+      }
+
+      // Call the function to increment visit count
+      incrementVisitCount();
+  </script>
+  
   </body>
 </html>
