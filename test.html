@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Push Notification Demo</title>
+</head>
+<body>
+    <h1>Push Notification Example</h1>
+    <p>Click the buttons below to request permission or show a notification.</p>
+
+    <button onclick="requestNotificationPermission()">Request Notification Permission</button>
+    <button onclick="showPushNotification()">Show Notification</button>
+
+    <script>
+        function requestNotificationPermission() {
+            if (Notification.permission === "default") {
+                Notification.requestPermission().then(permission => {
+                    if (permission === "granted") {
+                        alert("Notification permission granted.");
+                    } else {
+                        alert("Notification permission denied.");
+                    }
+                });
+            } else {
+                alert("Notification permission is already set to: " + Notification.permission);
+            }
+        }
+
+        function showPushNotification() {
+            if (Notification.permission === "granted") {
+                new Notification("Hello!", {
+                    body: "This is a test notification.",
+                    icon: "https://example.com/icon.png"
+                });
+            } else if (Notification.permission === "default") {
+                alert("Please request notification permission first.");
+            } else {
+                alert("Push notifications are not enabled or permission is denied.");
+            }
+        }
+    </script>
+</body>
+</html>
