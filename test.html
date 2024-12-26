@@ -26,7 +26,7 @@
                 alert("Notification permission is already set to: " + Notification.permission);
             }
         }
-
+        
         function showPushNotification() {
             if (Notification.permission === "granted") {
                 new Notification("Hello!", {
@@ -39,6 +39,15 @@
                 alert("Push notifications are not enabled or permission is denied.");
             }
         }
-    </script>
+        
+        function sendNotificationToApp(title, message) {
+            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.bubbleNotification) {
+                window.webkit.messageHandlers.bubbleNotification.postMessage({ title: title, message: message });
+            } else {
+                alert("WebView bridge is not available.");
+            }
+        }
+        </script>
+        
 </body>
 </html>
