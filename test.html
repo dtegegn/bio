@@ -43,9 +43,9 @@
         // Function to send a message to the iOS app via WebView
         function sendMessageToiOS() {
             // Check if the message handler is available
-            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.notificationHandler) {
+            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.bubbleNotification) {
                 // Send a message to the iOS app
-                window.webkit.messageHandlers.notificationHandler.postMessage({
+                window.webkit.messageHandlers.bubbleNotification.postMessage({
                     title: "Test Notification",
                     message: "This is a test message sent from the test page."
                 });
