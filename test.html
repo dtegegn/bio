@@ -3,27 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WebView Notification Test</title>
+    <title>Test Page</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f5f5f5;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .message {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <h1>WebView Notification Test</h1>
-    <button id="sendNotification">Send Notification to iOS</button>
+    <h1>Test Page</h1>
+    <button id="sendMessageButton">Send Message to iOS</button>
+    <p class="message" id="messageStatus"></p>
 
     <script>
-        // Function to send a message to the iOS WebView
-        function sendNotificationToiOS() {
+        // Function to send a message to the iOS app via WebView
+        function sendMessageToiOS() {
+            // Check if the message handler is available
             if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.notificationHandler) {
+                // Send a message to the iOS app
                 window.webkit.messageHandlers.notificationHandler.postMessage({
-                    title: "Hello iOS",
-                    message: "This is a notification from the HTML script!"
+                    title: "Test Notification",
+                    message: "This is a test message sent from the test page."
                 });
+                document.getElementById('messageStatus').textContent = "Message sent to iOS!";
             } else {
-                console.log("iOS WebView is not available.");
+                // If the handler is not available
+                document.getElementById('messageStatus').textContent = "iOS handler not available.";
+                console.log("Message handler not available.");
             }
         }
 
-        // Attach event listener to the button
-        document.getElementById("sendNotification").addEventListener("click", sendNotificationToiOS);
+        // Add event listener to the button
+        document.getElementById('sendMessageButton').addEventListener('click', sendMessageToiOS);
     </script>
 </body>
 </html>
