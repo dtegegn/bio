@@ -3,51 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Push Notification Demo</title>
+    <title>WebView Notification Test</title>
 </head>
 <body>
-    <h1>Push Notification Example</h1>
-    <p>Click the buttons below to request permission or show a notification.</p>
-
-    <button onclick="requestNotificationPermission()">Request Notification Permission</button>
-    <button onclick="showPushNotification()">Show Notification</button>
+    <h1>WebView Notification Test</h1>
+    <button id="sendNotification">Send Notification to iOS</button>
 
     <script>
-        function requestNotificationPermission() {
-            if (Notification.permission === "default") {
-                Notification.requestPermission().then(permission => {
-                    if (permission === "granted") {
-                        alert("Notification permission granted.");
-                    } else {
-                        alert("Notification permission denied.");
-                    }
+        // Function to send a message to the iOS WebView
+        function sendNotificationToiOS() {
+            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.notificationHandler) {
+                window.webkit.messageHandlers.notificationHandler.postMessage({
+                    title: "Hello iOS",
+                    message: "This is a notification from the HTML script!"
                 });
             } else {
-                alert("Notification permission is already set to: " + Notification.permission);
+                console.log("iOS WebView is not available.");
             }
         }
-        
-        function showPushNotification() {
-            if (Notification.permission === "granted") {
-                new Notification("Hello!", {
-                    body: "This is a test notification.",
-                    icon: "assets/images/favicon.ico"
-                });
-            } else if (Notification.permission === "default") {
-                alert("Please request notification permission first.");
-            } else {
-                alert("Push notifications are not enabled or permission is denied.");
-            }
-        }
-        
-        function sendNotificationToApp(title, message) {
-            if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.bubbleNotification) {
-                window.webkit.messageHandlers.bubbleNotification.postMessage({ title: title, message: message });
-            } else {
-                alert("WebView bridge is not available.");
-            }
-        }
-        </script>
-        
+
+        // Attach event listener to the button
+        document.getElementById("sendNotification").addEventListener("click", sendNotificationToiOS);
+    </script>
 </body>
 </html>
